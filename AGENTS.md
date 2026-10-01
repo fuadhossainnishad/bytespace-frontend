@@ -7,7 +7,7 @@ Build and maintain the Bytespace frontend with clear, accessible, performant, an
 ## Working rules
 
 - Read this file, check the branch and worktree, and inspect only the relevant files before changing anything. Consult the relevant docs rather than loading the whole repository.
-- `master` is the intended protected default branch. Do implementation work on focused working branches and merge changes through pull requests; never commit or push directly to `master`. The repository has no remote or protection configuration yet.
+- `master` is the intended protected default branch. Do implementation work on focused working branches and merge changes through pull requests; never commit or push directly to `master`. Verify the configured remote and host protection settings rather than assuming them.
 - Make the smallest coherent change. Avoid unrelated edits, speculative abstractions, giant components, and unnecessary dependencies.
 - Before adding architecture, components, or dependencies, confirm the need in the actual framework, design, and task. Keep architecture proportional to the application.
 - Preserve explicit boundaries between routes, page sections, reusable UI, content/data, utilities, and assets. Keep components focused, composable, and accessible; share code when reuse is real, not hypothetical.

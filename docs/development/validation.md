@@ -1,6 +1,6 @@
 # Validation
 
-Validation should match the changed behavior and provide evidence without inventing tooling. This repository currently has no initialized application framework or scripts, so framework-specific commands are pending.
+Validation should match the changed behavior and provide evidence using the scripts configured in `package.json`.
 
 ## Validation categories
 
@@ -14,6 +14,12 @@ Validation should match the changed behavior and provide evidence without invent
 - **Accessibility:** check semantics, keyboard use, focus, contrast, and assistive-technology behavior as applicable.
 - **Asset integrity:** verify referenced assets resolve, have appropriate formats, and retain required provenance or licensing.
 
-## Commands
+## Available commands
 
-All framework-specific commands and the tools that run them are pending application-stack initialization. Do not document or run guessed commands. Once the stack is selected, record the actual project commands and keep them aligned with its configuration.
+- `npm install` — install dependencies from the lockfile.
+- `npm run lint` — run ESLint.
+- `npm run typecheck` — run TypeScript with `--noEmit`.
+- `npm run build` — create the Next.js production build.
+- `npm run dev` and `npm run start` — run the development server and serve a production build, respectively.
+
+Formatting automation, browser/runtime, responsive, visual, accessibility, and asset checks remain to be selected or added when the design and application needs are analyzed. Do not document guessed commands.
