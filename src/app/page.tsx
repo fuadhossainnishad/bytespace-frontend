@@ -12,7 +12,7 @@ import { Header } from "@/components/layout/Header";
 
 export default function Home() {
   return (
-    <>
+    <div className="home-page">
       <Header />
       <main id="top">
         <Hero />
@@ -29,6 +29,6 @@ export default function Home() {
         <Testimonials />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
