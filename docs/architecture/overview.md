@@ -1,6 +1,6 @@
 # Architecture Overview
 
-This document sets principles, not an implementation blueprint. The framework and design structure have not yet been analyzed, so no framework-specific architecture is established.
+This document sets principles, not an implementation blueprint. The application stack is initialized; design and product architecture remain pending analysis.
 
 ## Established decisions
 
@@ -8,13 +8,13 @@ This document sets principles, not an implementation blueprint. The framework an
 - Use explicit boundaries, minimal coupling, strong typing, and deterministic behavior.
 - Favor readable, testable solutions with appropriate abstraction.
 - Treat accessibility, performance, and security as engineering requirements.
+- Use Next.js App Router with strict TypeScript as the frontend foundation.
 
 ## Pending decisions
 
-- Application framework, routing model, and rendering strategy.
 - State management, data access, and content sourcing.
 - Styling and design-token implementation.
-- Build, test, and deployment tooling.
+- Test and deployment tooling beyond the initialized lint, typecheck, and build scripts.
 
 Resolve these after inspecting the design and confirming project requirements. Record only durable, meaningful choices in ADRs.
 
