@@ -5,6 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "ByteSpace | Learn Something New",
   description: "Explore courses, build your skills, and grow with ByteSpace.",
+  icons: { icon: "/assets/bytespace-symbol.svg" },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

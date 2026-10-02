@@ -137,8 +137,8 @@
 /* Designed not-found route */
 .not-found-hero { height: 960px; }
 .not-found-content { position: relative; width: min(935px, calc(100% - 40px)); margin: 0 auto; padding-top: 521px; text-align: center; }
-.not-found-number { position: absolute; z-index: -1; top: 155px; right: 0; left: 0; color: var(--lime); font-family: var(--display-font); font-size: clamp(220px, 31vw, 440px); font-weight: 700; line-height: 1; letter-spacing: -20px; opacity: .9; -webkit-mask-image: linear-gradient(to bottom, #000 46%, transparent 100%); mask-image: linear-gradient(to bottom, #000 46%, transparent 100%); }
-.not-found-content h1 { max-width: 935px; margin: 0 auto; font-family: var(--display-font); font-size: 48px; font-weight: 600; line-height: 1.2; letter-spacing: -.7px; }
+.not-found-number { position: absolute; z-index: -1; top: 160px; right: 0; left: 0; color: var(--lime); font-family: var(--display-font); font-size: 480px; font-weight: 700; line-height: 1; letter-spacing: -4.8px; opacity: .9; -webkit-mask-image: linear-gradient(to bottom, #000 46%, transparent 100%); mask-image: linear-gradient(to bottom, #000 46%, transparent 100%); }
+.not-found-content h1 { max-width: 935px; margin: 0 auto; font-family: var(--display-font); font-size: 72px; font-weight: 600; line-height: 1.2; letter-spacing: -.72px; }
 .not-found-content p { margin: 28px 0 33px; color: rgba(255,255,255,.8); font-size: 16px; }
 .not-found-button { min-height: 46px; }
 

@@ -11,5 +11,7 @@ const courses: Course[] = [
 ];
 
 export function CourseGrid() {
-  return <div className="course-grid">{courses.map((course) => <Link className="course-card-link" key={course.title} href="/courses/digital-asset" aria-label={`${course.title}, course details`}><CourseCard course={course} /></Link>)}</div>;
+  return <div className="course-grid">{courses.map((course) => course.title === "Build Digital Asset"
+    ? <Link className="course-card-link" key={course.title} href="/courses/digital-asset" aria-label={`${course.title}, course details`}><CourseCard course={course} /></Link>
+    : <CourseCard course={course} key={course.title} />)}</div>;
 }

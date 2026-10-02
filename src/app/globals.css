@@ -196,6 +196,15 @@ img { display: block; max-width: 100%; }
 .footer-legal nav { display: flex; gap: 26px; }
 .footer-legal nav a, .footer-legal nav span { color: inherit; }
 
+@media (min-width: 1101px) {
+  .hero .search-bar { margin-top: 72px; }
+  .hero .search-bar input, .hero .search-bar .button { font-size: 18px; }
+  .home-page .category-section { margin-bottom: 180px; }
+  .home-page .growth-section { padding-bottom: 150px; }
+  .home-page .testimonials-section { padding-bottom: 140px; }
+  .home-page .footer-main { min-height: 370px; }
+}
+
 @media (max-width: 1100px) {
   .primary-nav { margin-left: 0; }
   .hero-orbit { width: 1000px; }

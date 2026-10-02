@@ -13,11 +13,11 @@ export const catalogCourses: Course[] = [
 const categories = ["Featured", "Music", "Drawing & Painting", "Marketing", "Animation", "Social Media", "UI/UX Design", "Creative Marketing", "Cooking"];
 
 function CourseLink({ course }: { course: Course }) {
-  return (
-    <Link className="catalog-card-link" href="/courses/digital-asset" aria-label={`${course.title}, course details`}>
-      <CourseCard course={course} decorative />
-    </Link>
-  );
+  const card = <CourseCard course={course} decorative />;
+
+  return course.title === "Build Digital Asset"
+    ? <Link className="catalog-card-link" href="/courses/digital-asset" aria-label={`${course.title}, course details`}>{card}</Link>
+    : card;
 }
 
 export function CourseCatalog({ creator = false }: { creator?: boolean }) {
