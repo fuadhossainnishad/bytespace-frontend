@@ -1,6 +1,6 @@
 export function SearchBar({ compact = false }: { compact?: boolean }) {
   return (
-    <form className={`search-bar${compact ? " search-bar--compact" : ""}`} action="#courses" role="search">
+    <form className={`search-bar${compact ? " search-bar--compact" : ""}`} action={compact ? undefined : "/search"} role="search">
       <label className="search-bar__field">
         {!compact && <svg aria-hidden="true" viewBox="0 0 24 24">
           <circle cx="10.8" cy="10.8" r="6.3" />

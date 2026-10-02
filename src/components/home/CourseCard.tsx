@@ -9,7 +9,7 @@ export function CourseCard({ course, decorative = false }: { course: Course; dec
       </div>
       <div className="course-card-content">
         <div className="course-title-row">
-          <div><h3>{course.title}</h3><p>by {decorative ? <span>purepearl studio</span> : <a href="#creators">purepearl studio</a>}</p></div>
+          <div><h3>{course.title}</h3><p>by <span>purepearl studio</span></p></div>
           <span className="course-rating">4.5 <b>★</b></span>
         </div>
         <div className="course-details">
